@@ -30,7 +30,7 @@ description:
         <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
         <br>Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
     </p>
-  shortDescription: расПЕТЉАвање 3.0
+  shortDescription: расПЕТЉАвање 3.0 - основна школа
 
 
 lessons:
@@ -59,7 +59,7 @@ lessons:
         guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
 
       - type: reading
-        title: 1.3 Пајтон IDLE и рад у конзоли
+        title: 1.3 Пајтон IDLE
         file: 1_3_Konzola.rst
         description: #Optional
         guid: 87292e57-d71e-44ed-9c82-681db776c601
