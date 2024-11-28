@@ -1,13 +1,17 @@
-courseId: courseID 
-lang: en
-title: Petljadoc Course
+courseId: raspetljavanje2024-2025-OS
+lang: sr-Cyrl
+title: расПЕТЉАвање 3.0 - основна школа
 description:
   willLearn: 
-    - Preview of Petljadoc course
+    - Основе програмирања у Пајтону
+    - Гранање
+    - Петље
+    - Листе
+    - Дебаговање
+    - Функције 
+    - Матрице 
   requirements:
-    - Petljadoc
-    - Runestone
-    - Sphinx
+  - Инсталиран Пајтон (Упутство за инсталацију се налази у самом курсу)
   toc:
     - Intro to Petljadoc INDEX.yaml
   externalLinks:  
@@ -18,27 +22,318 @@ description:
     - text: Runestone Interactive
       href: https://github.com/RunestoneInteractive/overview
   longDescription: |
-    This is an example of a long description...
-  shortDescription: Shrot description
+    <p>
+    РасПЕТЉАвање је бесплатан програм подршке учењу програмирања који по трећи пут организујемо. Овај курс је намењен свим ученицима и ученицима основне школе који немају претходног искуства у програмирању, а желе са нама да науче. У овом интерактивном курсу са интегрисаним видео лекцијама ћете имати прилику да учите програмирање уз континуирану менторску подршку.
+    </p>
+    <p>
+        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
+        <br>Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
+    </p>
+  shortDescription: расПЕТЉАвање 3.0
 
 
 lessons:
-  - title: Lesson 1
+
+  - title: 1. Основе
     guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
-    description: Your first lesson. Description is not required attribute
-    folder: 1_Lesson
+    description: 
+    folder: 1_Osnove
     activities:
+
       - type: reading
-        title: Intro
-        file: intro.rst 
+        title: 1.0 Увод
+        file: 1_0_Uvod.rst
+        description: #Optional
+        guid: 2ebc5a0b-8b2c-49ac-a301-437d59fa7aa0
+
+      - type: reading
+        title: 1.1 Зашто је добро научити програмирање?
+        file: 1_1_namena_programa.rst
+        guid: 85bfcb00-e709-4763-93da-afa4958f4407
+
+      - type: reading
+        title: 1.2 Инсталација Пајтона
+        file: 1_2_Instalacija_Pajtona.rst
         description: #Optional
         guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
-      - type: video
-        title: Video activity for your lesson
-        decription: Nice video
-        url: https://www.youtube.com/watch?v=2KYuzJKemXw
-        guid: 978760d0-a133-4ffd-af30-85fdb38aa384
-      - type: quiz
-        title: Test your students
-        file: quiz.rst
+
+      - type: reading
+        title: 1.3 Пајтон IDLE и рад у конзоли
+        file: 1_3_Konzola.rst
+        description: #Optional
+        guid: 87292e57-d71e-44ed-9c82-681db776c601
+
+      - type: reading
+        title: 1.4 Променљиве и типови података 
+        file: 1_4_Tipovi.rst
         guid: dd96bf63-e558-4540-95a6-00b96e45e3ef
+      
+      - type: reading
+        title: 1.5 Унос података - input() 
+        file: 1_5_Unos.rst
+        guid: 212f4a1a-e0d7-4171-a691-e3284822b6b1
+
+      - type: reading
+        title: 1.6 Испис - print() 
+        file: 1_6_Ispis.rst
+        guid: cf8c08d6-711c-443d-9098-a8f2fe147d45
+
+      - type: reading
+        title: 1.7 Вежбе
+        file: 1_7_Vezbe.rst
+        guid: 2947ad11-cce1-47dd-a996-9bac19050194
+
+      - type: reading
+        title: 1.8 Домаћи задаци
+        file: 1_8_Domaci.rst
+        guid: 662e03e5-68bd-4b70-ab9b-3099c39d0da8
+
+
+  - title: 2. Гранање
+    guid: e301c6dd-f29e-454f-bce1-23c705e257b1
+    description: 
+    folder: 2_Grananje
+    activities:
+    
+      - type: reading
+        title: 2.1 Гранање
+        file: 2_1_grananje.rst
+        guid: 6bed1b9e-2b42-40a5-a88d-3df4641917a8
+
+      - type: reading
+        title: 2.2 Логичке операције
+        file: 2_2_logicke_operacije.rst
+        guid: e620fc84-fef9-4b8e-a5ce-2a64a4272fc0
+
+      - type: reading
+        title: 2.3 Вежбе
+        file: 2_3_vezbe.rst
+        guid: 44454acf-afad-4a86-832d-329e9fead350
+
+      - type: reading
+        title: 2.4 Домаћи задаци
+        file: 2_4_domaci.rst
+        guid: 99c8c5d2-24d7-4075-9fb8-ba55d41a3326
+
+      
+#  - title: 3. Петље
+#    guid: ecc6cf85-c5ec-4829-b5d8-56a35d31bffc
+#    description: 
+#    folder: 3_Petlje
+#    activities:
+
+#      - type: reading
+#        title: 3.1 While петља 
+#        file: 3_1_while.rst
+#        guid: 2b5e7478-1251-4b46-8345-75adfb83f7fe
+
+#      - type: reading
+#        title: 3.2 For петља
+#        file: 3_2_for.rst
+#        guid: 9b570f5b-8ef8-4158-9f67-2c9d75b0bd59
+
+#      - type: reading
+#        title: 3.3 Вежбе
+#        file: 3_3_vezbe.rst
+#        guid: b5b8a141-d5a5-479d-bf7c-7558b9d54469
+
+#      - type: reading
+#        title: 3.4 Домаћи задаци
+#        file: 3_4_domaci.rst
+#        guid: 59b728b6-4878-426e-935c-a6cff94a3a16
+
+#  - title: 4. Вежбање - основе, гранање и петље
+#    guid: 930ed43d-1bdc-41c6-8eac-8c6567f1f778
+#    description: 
+#    folder: 4_Vezbanje
+#    activities:
+
+#      - type: reading
+#        title: 4.1 Вежбање
+#        file: 4_1_vezbanje.rst
+#        guid: 42a3445e-205e-4589-8228-08ca562fca27
+
+#      - type: reading
+#        title: 4.2 Домаћи
+#        file: 4_2_domaci.rst
+#        guid: a44588b5-3d61-4684-a14e-b719015d8d7a
+#        
+#  - title: 5. Листе
+#    guid: a70c7ea5-0f3e-4b96-ae9c-c0d55e7c9f24
+#    description: 
+#    folder: 5_Liste
+#    activities:
+
+#      - type: reading
+#        title: 5.1 Листе
+#        file: 5_1_liste.rst
+#        guid: 917399cf-5b08-452e-990f-265dd54be3af
+
+#      - type: reading
+#        title: 5.2 For петље и итерирање кроз листу
+#        file: 5_2_for_liste.rst
+#        guid: 90968aa9-09d9-4a54-9bbd-100c2b6d2c1f
+
+#      - type: reading
+#        title: 5.3 Вежбе
+#        file: 5_3_vezbe.rst
+#        guid: 99c3e64d-824a-44c2-97a7-dce987dba31b
+
+#     - type: reading
+#        title: 5.4 Домаћи задаци
+#        file: 5_4_domaci.rst
+#        guid: 1d531413-2350-4238-b219-72a0a2006762
+
+#  - title: 6. Вежбање - петље и листе
+#    guid: 82d01a3b-cc9a-4568-b17c-a97259f70727
+#    description: 
+#    folder: 6_Vezbanje
+#    activities:
+
+#      - type: reading
+#        title: 6.1 Вежбање
+#        file: 6_1_vezbe.rst
+#        guid: a5634a23-f654-4be5-847e-714c764df8e5
+
+#      - type: reading
+#        title: 6.2 Домаћи
+#        file: 6_2_domaci.rst
+#        guid: 9e29a85a-8c4b-4d30-9b2c-ca463220504d
+
+#  - title: 7. Дебаговање
+#    guid: 614142b7-7e45-449a-b227-284e9cfcc1d5
+#    description: 
+#    folder: 7_Debagovanje
+#    activities:
+
+#      - type: reading
+#        title: 7.1 Чести типови проблема
+#        file: 7_1_cesti_problemi.rst
+#        guid: 4606b66a-3de8-455a-b7e9-474642280f84
+
+#      - type: reading
+#        title: 7.2 Читање error log-а
+#        file: 7_2_error_log.rst
+#        guid: 2fb457e0-e164-4753-b4a6-e03245ad1069
+
+#      - type: reading
+#        title: 7.3 Гуглање
+#        file: 7_3_guglanje.rst
+#        guid: 6c9b4932-dbcd-4b4a-bfcd-e4d282bd0e33
+
+#      - type: reading
+#        title: 7.4 Како користити вештачку интелигенцију за учење програмирања
+#        file: 7_4_chatGPT.rst
+#        guid: 1c68ee7c-7443-41ae-bd0a-b54feffc34ae
+
+#      - type: reading
+#        title: 7.5 Процедура приступања неисправном коду
+#        file: 7_5_neispravan_kod.rst
+#        guid: 4a00a9f3-2d39-4a86-bd45-d9fc720d01df
+
+#      - type: reading
+#        title: 7.6 Процедура приступања коду који не ради правилно
+#        file: 7_6_nepravilan_kod.rst
+#        guid: 7e2069c4-c213-430c-91e2-1eb0a8084601
+
+#      - type: reading
+#        title: 7.7 Вежбе
+#        file: 7_7_vezbe.rst
+#        guid: 0b0032f8-3b86-42cf-83f9-9d034684eccc
+
+#      - type: reading
+#        title: 7.8 Домаћи задаци
+#        file: 7_8_domaci.rst
+#        guid: aa527b29-61a5-42a4-b8fe-4095efcd5c77
+
+#  - title: 8. Функције
+#    guid: 5efac7ef-4429-49ba-bc79-8fa9f7bb15cf
+#    description: 
+#    folder: 8_Funckije
+#    activities:
+
+#      - type: reading
+#        title: 8.1 Шта је функција
+#        file: 8_1_funkcija.rst
+#        guid: 60d6c74e-520c-45a2-b62b-dc7670a7d9e6
+
+#      - type: reading
+#        title: 8.2 Функције које већ користимо
+#        file: 8_2_koriscene_funckije.rst
+#        guid: 63b57ae0-dbb4-4cbc-b9e8-d15c3fcccf3e
+
+#      - type: reading
+#        title: 8.3 Концепт улазних аргумената
+#        file: 8_3_argumenti.rst
+#        guid: 1b092396-b03b-4154-9a12-98b93cb6b60f
+
+#      - type: reading
+#        title: 8.4 Рекурзија
+#        file: 8_4_rekurzija.rst
+#       guid: 50b2d178-00d4-43c0-901c-b976918ec3db
+
+#      - type: reading
+#        title: 8.5 Речници
+#        file: 8_5_recnici.rst
+#        guid: 640b08d6-1cb4-487d-a410-57e7a4b2c627
+
+#  - title: 9. Вежбање - дебаговање и фунцкије
+#    guid: d07d1d0d-0cef-49bb-a2e0-d87410850af8
+#    description: 
+#    folder: 9_Vezbanje
+#    activities:
+
+#      - type: reading
+#        title: 9.1 Vežbanje
+#        file: vezbanje_9.rst
+#        guid: 6fc847b9-cc9f-459c-9679-ae801b1a804b
+
+#  - title: 10. Матрице
+#    guid: 946b05db-c7d0-4e1b-8fc1-45ae80df1ca7
+#    description: 
+#    folder: 10_Matrice
+#    activities:
+
+#      - type: reading
+#        title: 10.1 Матрице
+#        file: 10_1_matrice.rst
+#        guid: 53446961-fc21-4b62-8073-c7759921ffe6
+
+#      - type: reading
+#        title: 10.2 Вежбање
+#        file: 10_2_vezbanje.rst
+#        guid: cce35b02-ba6d-4889-ba80-c40e894b3fb8
+
+#        - type: reading
+#          title: 10.3 Домаћи задаци
+#          file: 10_3_domaci.rst
+#          guid: 72155166-f899-4e7d-8e34-9282ecb8143f
+
+#  - title: 11. Вежбање - матрице
+#    guid: bf09a7bd-9787-44dd-a5be-80af988ae62e
+#    description: 
+#    folder: 11_Vezbanje
+#    activities:
+
+#      - type: reading
+#        title: 11.1 Вежбање
+#        file: 11_1_vezbanje.rst
+#        guid: 569d8728-ee2f-48b4-b164-64ec1b0300ae
+
+#      - type: reading
+#        title: 11.2 Домаћи задаци
+#        file: 11_2_domaci.rst
+#        guid: adcf4abe-0ef4-461c-83ac-d246bce770e5
+
+#  - title: 12. Вежбање
+#    guid: 01f793f7-510f-47d9-a2c6-d558588a12fb
+#    description: 
+#    folder: 12_Vezbanje
+#    activities:
+
+#      - type: reading
+#        title: 12.1 Вежбање
+#        file: 12_1_vezbanje.rst
+#        guid: 8092f79b-efb5-4b7f-80b7-81918a024b56
+
