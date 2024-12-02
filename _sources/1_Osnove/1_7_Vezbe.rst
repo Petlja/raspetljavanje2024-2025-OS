@@ -46,9 +46,13 @@
 
 .. mchoice:: uvod_vezbe_pitanje_1
 	:answer_a: 52
+	:feedback_a: Нетачно.
 	:answer_b: 3517
+	:feedback_b: Тачно!
 	:answer_c: 35 17
+	:feedback_c: Нетачно.
 	:answer_d: 52 17
+	:feedback_d: Нетачно.
 	:correct: b
 
 	Шта ће бити исписано на излазу наведеног програма ако је на улазу унето 35 и 17?
@@ -63,9 +67,13 @@
 
 .. mchoice:: uvod_vezbe_pitanje_2
 	:answer_a: 52
+	:feedback_a: Тачно!
 	:answer_b: 3517
+	:feedback_b: Нетачно.
 	:answer_c: 35 17
+	:feedback_c: Нетачно.
 	:answer_d: 52 17
+	:feedback_d: Нетачно.
 	:correct: a
 
 	Шта ће бити исписано на излазу наведеног програма ако је на улазу унето 35 и 17?
@@ -146,9 +154,13 @@
 
 .. mchoice:: uvod_vezbe_pitanje_3
 	:answer_a: 12
+	:feedback_a: Нетачно.
 	:answer_b: 170
+	:feedback_b: Нетачно.
 	:answer_c: 35
+	:feedback_c: Нетачно.
 	:answer_d: 23
+	:feedback_d: Тачно!
 	:correct: d
 
 	Шта ће бити исписано на излазу наведеног програма?
@@ -279,19 +291,7 @@
 .. infonote::
 	У Python-у, операција **степен** означава се са `**`. На пример, `10**2` представља 10 на квадрат.
 
-.. infonote:: **МАТЕМАТИЧКИ ПОДСЕТНИК:**
 
-	Операција степеновања означава множење броја самог са собом одређени број пута. 
-	На пример, :math:`10^2` представља 10 на квадрат, што значи 10 пута 10, односно 100.
-	
-	.. math::
-		
-		\begin{align}\\
-		&10^2 = 10 \cdot 10 = 100\\
-		&10^3 = 10 \cdot 10 \cdot 10 = 1000\\
-		&5^3 = 5 \cdot 5 \cdot 5 = 125\\
-		&2^4 = 2 \cdot 2 \cdot 2 \cdot 2 = 16\\
-		\end{align}
 
 
 
