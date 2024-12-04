@@ -84,7 +84,8 @@
 за планирани број дана.
 
 **Ulaz:**  
-- Budžet (u evrima)  KOMENTAR: /Stajalo je "Budžet (u dolarima)". Da li je to značilo da je potrebna konverzija EUR-USD, ili samo previd?/
+
+- Budžet (u evrima)
 - Broj dana  
 
 **Izlaz:** Da/Ne  
