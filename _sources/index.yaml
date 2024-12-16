@@ -232,12 +232,12 @@ lessons:
         guid: affebe8a-3587-4873-878f-23e6523a2b94
 
       - type: reading
-        title: 7.7 Вежбе
+        title: 7.6 Вежбе
         file: 7_7_vezbe.rst
         guid: d1a3563d-d200-43d5-99cc-2c36972d3323
 
       - type: reading
-        title: 7.8 Домаћи задаци
+        title: 7.7 Домаћи задаци
         file: 7_8_domaci.rst
         guid: 895404da-b4f3-40e2-8dc6-fb9dfbc0387c
 
