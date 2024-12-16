@@ -8,8 +8,7 @@ While петља
 
 Основна синтакса:
 
-.. activecode:: while1  
-   :coach:
+.. code-block:: python
 
    while услов:  
        # кôд који се извршава док је услов тачан

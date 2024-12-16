@@ -5,13 +5,13 @@
 .. infonote::
 
    Улазни аргументи су вредности које прослеђујемо функцији или програму како би они могли да изврше одређену радњу. Функције представљају блокове кода који извршавају одређене задатке, 
-   а улaзни аргументи су подаци који тим функцијама омогућавају да обаве тај задатак. Параметри су променљиве унутар дефиниције функције, док су аргументи вредности које прослеђујемо 
+   а улазни аргументи су подаци који тим функцијама омогућавају да обаве тај задатак. Параметри су променљиве унутар дефиниције функције, док су аргументи вредности које прослеђујемо 
    функцији када је позовемо. 
 
 
 Пример у стварном животу:
 
-Замислите да правите рецепт за колач. Састојци које додате у смесу су улазни аргументи. Без састојака (улазних аргумената), колач се не може направити, а врста састојака (аргумената) 
+Замислите да правите колач по рецепту. Састојци које додате у смесу су улазни аргументи. Без састојака (улазних аргумената), колач се не може направити, а врста састојака (аргумената) 
 одређује како ће коначни производ изгледати.
 
 Типови улазних аргумената:
@@ -87,7 +87,7 @@
    :coach:
    
    def pozdrav(ime):
-       print(f"Zdravo, {ime}!")
+       print("Zdravo", ime)
 
    # Pozivanje funkcije
    pozdrav("Ana")  # Output: Zdravo, Ana!
@@ -132,7 +132,7 @@
    def kvadrat(broj):
        return broj ** 2
 
-   rezultat = kvadrat()
+   rezultat = kvadrat(4)
    print(rezultat)  # Output: 16
 
 
@@ -155,8 +155,8 @@
        return obim, povrsina
 
    rez_obim, rez_povrsina = obim_i_povrsina(10)
-   print(f"Obim: {rez_obim}, Površina: {rez_povrsina}")
-   # Output: Obim: 31.400000000000002, Površina: 78.5
+   print("Obim:", rez_obim, "Površina:", rez_povrsina)
+   # Output: Obim: 31.4, Površina: 78.5
 
 
 
@@ -172,7 +172,7 @@
 
    temp_c = 25
    temp_f = celsius_u_fahrenheit(temp_c)
-   print(f"{temp_c}°C = {temp_f}°F")
+   print(temp_c,"°C", "=", temp_f, "°F")
    # Output: 25°C = 77.0°F
 
 
@@ -188,131 +188,12 @@
        return duzina, veliki, mali
 
    rez_duzina, rez_veliki, rez_mali = obrada_teksta("Programiranje")
-   print(f"Dužina: {rez_duzina}, Velika slova: {rez_veliki}, Mala slova: {rez_mali}")
-   # Output: Dužina: 12, Velika slova: PROGRAMIRANJE, Mala slova: programiranje
-
-
-Додатни примери
-===================
-
-**1. Увод у параметре и враћање вредности**  
-
-Функције су веома корисне јер омогућавају поновну употребу кода. Параметри омогућавају да функција прима податке, а `return` омогућава да функција врати резултат који 
-може да се користи у даљем програму.  
-
-**Пример:**  
-
-.. activecode:: funkcije400
-   :coach:
-   
-   def pozdrav(ime):
-       print(f"Zdravo, {ime}!")
-
-   # Pozivanje funkcije
-   pozdrav("Ana")  # Output: Zdravo, Ana!
-   pozdrav("Marko")  # Output: Zdravo, Marko!
-
-
-
-
-**2. Позивање функција са аргументима**  
-Параметри су променљиве унутар дефиниције функције, док су аргументи вредности које прослеђујемо функцији када је позовемо.  
-
-- **Позициони аргументи:** Прослеђују се по редоследу.  
-- **Именовани аргументи:** Прецизирамо име параметра при позиву функције.  
-
-**Пример:**  
-
-.. activecode:: funkcije401
-   :coach:
-
-   def sabiranje(a, b):
-       return a + b
-
-   # Pozicioni argumenti
-   rezultat1 = sabiranje(5, 3)
-   print(rezultat1)  # Output: 8
-
-   # Imenovani argumenti
-   rezultat2 = sabiranje(b=10, a=2)
-   print(rezultat2)  # Output: 12
-
-
-
-
-**3. Враћање вредности из функција**  
-Функције могу враћати резултат помоћу кључне речи `return`. Без `return`, функција само извршава задатке, али не враћа податке.  
-
-**Пример:**  
-
-.. activecode:: funkcije402
-   :coach:
-
-   def kvadrat(broj):
-       return broj ** 2
-
-   rezultat = kvadrat()
-   print(rezultat)  # Output: 16
-
-
-**Напомена:** Када функција дође до `return`, прекида се њено извршавање.  
-
-
-
-**4. Више повратних вредности**  
-Функције могу враћати више вредности користећи торке. Ово је корисно када треба да се израчуна више повезаних резултата.  
-
-**Пример:**  
-
-.. activecode:: funkcije403
-   :coach:
-
-   def obim_i_povrsina(precnik):
-       poluprecnik = precnik / 2
-       obim = 2 * 3.14 * poluprecnik
-       povrsina = 3.14 * (poluprecnik ** 2)
-       return obim, povrsina
-
-   rez_obim, rez_povrsina = obim_i_povrsina(10)
-   print(f"Obim: {rez_obim}, Površina: {rez_povrsina}")
-   # Output: Obim: 31.400000000000002, Površina: 78.5
-
-
-
-
-**5. Напредни примери**
-- **Пример 1:** Функција за конверзију температуре.  
-
-.. activecode:: funkcije404
-   :coach:
-
-   def celsius_u_fahrenheit(c):
-       return (c * 9/5) + 32
-
-   temp_c = 25
-   temp_f = celsius_u_fahrenheit(temp_c)
-   print(f"{temp_c}°C = {temp_f}°F")
-   # Output: 25°C = 77.0°F
-
-
-- **Пример 2:** Функција за обраду текста.  
-
-.. activecode:: funkcije405
-   :coach:
-   
-   def obrada_teksta(tekst):
-       duzina = len(tekst)
-       veliki = tekst.upper()
-       mali = tekst.lower()
-       return duzina, veliki, mali
-
-   rez_duzina, rez_veliki, rez_mali = obrada_teksta("Programiranje")
-   print(f"Dužina: {rez_duzina}, Velika slova: {rez_veliki}, Mala slova: {rez_mali}")
+   print("Dužina:", rez_duzina, "Velika slova:", rez_veliki, "Mala slova:", rez_mali)
    # Output: Dužina: 12, Velika slova: PROGRAMIRANJE, Mala slova: programiranje
 
 
 
+.. infonote:: **Закључак**  
 
-**Закључак**  
-Кроз ову лекцију ћете разумети како да користите параметре и повратне вредности да би креирали ефикасне и прилагодљиве функције. Ови концепти су основа за напредније теме попут рекурзије 
-и рада са речницима.  
+   Кроз ову лекцију ћете разумети како да користите параметре и повратне вредности да би креирали ефикасне и прилагодљиве функције. Ови концепти су основа за напредније теме попут рекурзије 
+   и рада са речницима.  

@@ -4,7 +4,7 @@
 Задатак 1
 `````````
 
-Napiši program koji normalizuje elemente matrice tako da svi elementi budu u opsegu [0, 1], koristeći minimalnu i maksimalnu vrednost u matrici.
+Напиши програм који нормализује елементе матрице тако да сви елементи буду у опсегу [0, 1], користећи минималну и максималну вредност у матрици.
 
 **Primer 1:**
 
@@ -24,17 +24,16 @@ Napiši program koji normalizuje elemente matrice tako da svi elementi budu u op
 
 0.75 0.875 1.0
 
-**Objašnjenje:**
+**Објашњење:**
 
-Minimalna vrednost u matrici je 1, a maksimalna vrednost je 9. Normalizacija se vrši po formuli:
+Минимална вредност у матрици је 1, а максимална вредност је 9. Нормализација се врши по формули:
 
 :math:`x_{norm} = \frac{x - x_{min}}{x_{max} - x_{min}}`
 
-
-Zadatak 2
+Задатак 2
 `````````
 
-Napiši program koji računa zbir elemenata iznad i ispod glavne dijagonale u kvadratnoj matrici.
+Напиши програм који рачуна збир елемената изнад и испод главне дијагонале у квадратној матрици.
 
 **Primer 1:**
 
@@ -52,11 +51,11 @@ Zbir elemenata iznad glavne dijagonale: 15
 
 Zbir elemenata ispod glavne dijagonale: 12
 
-**Objašnjenje:**
+**Објашњење:**
 
-Zbir elemenata iznad glavne dijagonale: 2 + 3 + 6 = 11
+Збир елемената изнад главне дијагонале: 2 + 3 + 6 = 11
 
-Zbir elemenata ispod glavne dijagonale: 4 + 7 + 8 = 19
+Збир елемената испод главне дијагонале: 4 + 7 + 8 = 19
 
 **Primer 2:**
 
@@ -76,17 +75,16 @@ Zbir elemenata iznad glavne dijagonale: 26
 
 Zbir elemenata ispod glavne dijagonale: 42
 
-**Objašnjenje:**
+**Објашњење:**
 
-Zbir elemenata iznad glavne dijagonale: 2 + 3 + 4 + 7 + 8 + 12 = 26
+Збир елемената изнад главне дијагонале: 2 + 3 + 4 + 7 + 8 + 12 = 26
 
-Zbir elemenata ispod glavne dijagonale: 5 + 9 + 10 + 13 + 14 + 15 = 42
+Збир елемената испод главне дијагонале: 5 + 9 + 10 + 13 + 14 + 15 = 42
 
-
-Zadatak 3
+Задатак 3
 `````````
 
-Matrica predstavlja crno-belu sliku (1 - crna tačka, 0 - bela tačka). Naći dužinu najduže horizontalne, vertikalne i dijagonalne crne linije.
+Матрица представља црно-белу слику (1 - црна тачка, 0 - бела тачка). Наћи дужину најдуже хоризонталне, вертикалне и дијагоналне црне линије.
 
 **Primer 1:**
 
@@ -126,15 +124,14 @@ Najduža horizontalna crna linija: 5
 Najduža vertikalna crna linija: 5
 Najduža dijagonalna crna linija: 4
 
-
 Задатак 4
 `````````
 
-Matrica m x n predstavlja stanovništvo u gradskim kvartovima (1 - zdravi, 2 - zaraženi, 0 - prazno). Implementiraj:
+Матрица m × n представља становништво у градским квартовима (1 - здрави, 2 - заражени, 0 - празно). Имплементирај:
 
-1. Simulaciju širenja zaraze gde svaki zaraženi stanovnik zarazi svoje susede (gore, dole, levo, desno).
-2. Prikaz matrice posle jedne iteracije širenja.
-3. Prikaz matrice posle k iteracija širenja.
+1. Симулацију ширења заразе где сваки заражени становник зарази своје суседе (горе, доле, лево, десно).
+2. Приказ матрице после једне итерације ширења.
+3. Приказ матрице после k итерација ширења.
 
 **Primer 1:**
 
@@ -150,7 +147,6 @@ Matrica m x n predstavlja stanovništvo u gradskim kvartovima (1 - zdravi, 2 - z
 
 k = 1
 
-
 **Izlaz**:
 
 1 1 1 1 1
@@ -161,9 +157,9 @@ k = 1
 
 1 1 2 1 1
 
-**Objašnjenje:**
+**Објашњење:**
 
-Zaraženi stanovnik u sredini zarazio je svoje susede. 
+Заражени становник у средини заразио је своје суседе. 
 
 **Primer 2:**
 
@@ -189,15 +185,14 @@ k = 2
 
 2 2 2 2 2
 
-**Objašnjenje:**
+**Објашњење:**
 
-Zaraženi stanovnik u sredini zarazio je svoje susede koji su u dugoj iteraciji zarazili svoje susede.
-
+Заражени становник у средини заразио је своје суседе, који су у дугој итерацији заразили своје суседе.
 
 Задатак 5
 `````````
 
-Matrica sadrži samo 0 i 1. Pronađi najveći pravougaonik koji se sastoji isključivo od 1 и израчунај његову површину.
+Матрица садржи само 0 и 1. Пронађи највећи правоугаоник који се састоји искључиво од 1 и израчунај његову површину.
 
 **Primer 1:**
 
@@ -215,9 +210,9 @@ Matrica sadrži samo 0 i 1. Pronađi najveći pravougaonik koji se sastoji isklj
 
 6
 
-**Objašnjenje:**
+**Објашњење:**
 
-Najveći pravougaonik koji se sastoji isključivo od 1 je:
+Највећи правоугаоник који се састоји искључиво од 1 је:
 
 1 0 1 0 0
 
@@ -245,9 +240,9 @@ Najveći pravougaonik koji se sastoji isključivo od 1 je:
 
 12
 
-**Objašnjenje:**
+**Објашњење:**
 
-Najveći pravougaonik koji se sastoji isključivo od 1 je:
+Највећи правоугаоник који се састоји искључиво од 1 је:
 
 1 0 1 0 0
 
@@ -259,18 +254,17 @@ Najveći pravougaonik koji se sastoji isključivo od 1 je:
 
 1 1 **1 1 1**
 
-
 Задатак 6
 `````````
 
-Pao je sneg u gradu i potrebno je znati koliko centimetra snega je u kom delu grada palo. 
-Na nekim delovima grada je izmereno koliko je palo snega, dok na drugim delovima nije. 
-Imamo delimično popunjenu matricu gde svaki element predstavlja lokaciju u gradu i koliko centimetara snega je palo na toj lokaciji. 
-Lokacije na kojima je izmerena visina snega imaju broj između 1 i 10 dok lokacije na kojima nije izmereno imaju vrednost 0. 
-Potrebno je napraviti program koji za unete koordinate matrice estimira koliko je snega palo na toj lokaciji. 
-Visina snega u nekom polju se estimira kao prosečna vrednost lokacija oko nje koje imaju izmerenu visinu snega (srednja vrednost 3x3 podmatrice čiji je centar u traženoj tački). 
-Ako tražena tačka niji i jedno polje oko nje nemaju izmerenu visinu snega matrica pretrage se proširuke na dimenzije 5x5. 
-Ako ni tad nema proširuje se na 7x7 itd...
+Пао је снег у граду и потребно је знати колико центиметара снега је у ком делу града пало. 
+На неким деловима града је измерено колико је пало снега, док на другим деловима није. 
+Имамо делимично попуњену матрицу где сваки елемент представља локацију у граду и колико центиметара снега је пало на тој локацији. 
+Локације на којима је измерена висина снега имају број између 1 и 10, док локације на којима није измерена имају вредност 0. 
+Потребно је направити програм који за унете координате матрице процењује колико је снега пало на тој локацији. 
+Висина снега у неком пољу се процењује као просечна вредност локација око ње које имају измерену висину снега (средња вредност 3x3 подматрице чији је центар у траженој тачки). 
+Ако тражена тачка нити и једно поље око ње немају измерену висину снега, матрица претраге се проширује на димензије 5x5. 
+Ако ни тад нема, проширује се на 7x7 итд.
 
 **Primer 1:**
 
@@ -320,7 +314,7 @@ Koordinate: (5, 4)
 
 Estimirana visina snega: 3.0
 
-**Objašnjenje:**
+**Објашњење:**
 
 0 2 1 0 0 5 0 0 0
 
@@ -334,19 +328,18 @@ Estimirana visina snega: 3.0
 
 0 0 0 0 0 **0** 0 0 0
 
-Okolina 3x3 je prazna pa se okolina proširuje na 5x5. Prosečna vrednost izmerenih tačaka u okolini 5x5 je (5 + 1) / 2 = 3.0
+Околина 3x3 је празна па се околина проширује на 5x5. Просечна вредност измерених тачака у околини 5x5 је (5 + 1) / 2 = 3.0
 
-
-Zadatak 7
+Задатак 7
 `````````
 
-**UPOZORENJE:** Ovaj zadatak je napredan zadatak.
+**УПОЗОРЕЊЕ:** Овај задатак је напредан задатак.
 
 |
 
-Matrica dimenzija m x n predstavlja raspored parking mesta (1 - zauzeto, 0 - slobodno). 
-Za date koordinate odrediti da li je parking mesto slobodno. 
-Parking mesto je slobodno ako nije zauzeto i do njega može da se dođe (ima put nula od te tačke do ivice matrice).
+Матрица димензија м × н представља распоред паркинг места (1 - заузето, 0 - слободно). 
+За дате координате одредити да ли је паркинг место слободно. 
+Паркинг место је слободно ако није заузето и до њега може да се дође (има пут нула од те тачке до ивице матрице).
 
 **Primer 1:**
 
@@ -368,7 +361,7 @@ Koordinate: (2, 2)
 
 Parking mesto je slobodno
 
-**Objašnjenje:**
+**Објашњење:**
 
 1 1 1 1 1
 
@@ -380,7 +373,7 @@ Parking mesto je slobodno
 
 1 1 1 1 1
 
-Parking mesto je slobodno jer se može doći do ivice matrice.
+Паркинг место је слободно јер се може доћи до ивице матрице.
 
 **Primer 2:**
 
@@ -402,7 +395,7 @@ Koordinate: (4, 3)
 
 Parking mesto nije slobodno
 
-**Objašnjenje:**
+**Објашњење:**
 
 1 1 1 1 1
 
@@ -414,7 +407,8 @@ Parking mesto nije slobodno
 
 1 1 1 1 1
 
-Parking mesto nije slobodno jer se ne može doći do ivice matrice preko slobodnih pozicija.
+Паркинг место није слободно јер се не може доћи до ивице матрице преко слободних позиција.
+
 
 
 

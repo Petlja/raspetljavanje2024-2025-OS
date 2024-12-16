@@ -1,145 +1,291 @@
 Вежбање
-==============
+========
+
+Задатак 1
+-----------
+
+Дата је дводимензионална матрица бројева `nums`. Потребно је пронаћи највећи прост број који се налази на бар једној од дијагонала матрице. 
+Ако ни један прост број није присутан, исписати 0.
+
+.. activecode:: v12_zadatak1
+    :coach:
+
+    # Допуни
+
+**Пример 1**:
+
+**Улаз**:  
+Матрица:  
+
+2 3 5  
+
+7 11 13  
+
+17 19 23  
+
+**Излаз**:  
+23  
+
+**Објашњење излаза**:  
+Највећи прост број на дијагоналама је 23.  
+
+**Пример 2**:
+
+**Улаз**:  
+Матрица:  
+
+4 6 8  
+
+10 12 14  
+
+16 18 20  
+
+**Излаз**:  
+0  
+
+**Објашњење излаза**:  
+На дијагоналама не постоји прост број.  
+
+.. reveal:: 12_1_resenje_12_1_1
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
+
+    .. code-block:: python
+
+        def is_prime(num):
+            if num < 2:
+                return False
+            for i in range(2, int(num ** 0.5) + 1):
+                if num % i == 0:
+                    return False
+            return True
+
+        def largest_prime_on_diagonals(matrix):
+            largest_prime = 0
+            for i in range(len(matrix)):
+                if is_prime(matrix[i][i]):
+                    largest_prime = max(largest_prime, matrix[i][i])
+                if is_prime(matrix[i][len(matrix) - i - 1]):
+                    largest_prime = max(largest_prime, matrix[i][len(matrix) - i - 1])
+            return largest_prime
+        
+        # Ova funkcija će se koristiti u ostalim rešenjima bez definisanja
+        # Pretpostavlja se da je funkcija već definisana
+        def input_matrix(m, n):
+            # Inicijalizacija prazne matrice
+            matrica = []
+
+            # Unos elemenata matrice
+            print("Unesite elemente matrice red po red (razdvojene razmakom):")
+            for i in range(m):
+                red = []
+                print(f"Red {i + 1}:")
+                elementi = input().split()
+                for elem in elementi:
+                    red.append(int(elem))
+                matrica.append(red)
+
+                return matrica
+
+        # Unos dimenzija matrice
+        m = int(input("Unesite broj redova (m): "))
+        n = int(input("Unesite broj kolona (n): "))
+        
+        # Unos matrice
+        matrica = input_matrix(m, n)
+
+        print(largest_prime_on_diagonals(matrica))  # Испис резултата
 
 
-.. questionnote ::
+Задатак 2
+-----------
 
-   Napisati funkciju zapis(x, y) koja proverava da li se brojevi x i y zapisuju pomoću
-   istih cifara. Funkcija treba da vrati jedinicu ako je uslov ispunjen, a nulu inače.
-   Napisati program koji učitava dva cela broja i ispisuje da li je za njih pomenuti
-   uslov ispunjen ili ne.
-   
-   
+Дата је матрица димензија `m × n` и број `k`. Потребно је померити матрицу удесно `k` пута.
 
-.. activecode:: vezbanje8_109
-   :coach:
+.. activecode:: v12_zadatak2
+    :coach:
 
-   def zapis(x, y):
-       # Pretvaramo brojeve u string i sortiramo cifre
-       if sorted(str(x)) == sorted(str(y)):
-           return 1  # Ako su cifre iste, vraća 1
-       return 0  # Inače vraća 0
+    # Допуни
 
-   # Program koji učitava dva broja i proverava uslov
-   x = int(input("Unesite prvi broj (x): "))
-   y = int(input("Unesite drugi broj (y): "))
-   rezultat = zapis(x, y)
+**Пример 1**:
 
-   if rezultat == 1:
-       print("Brojevi", x, "i", y, "se mogu zapisati pomoću istih cifara.")
-   else:
-       print("Brojevi", x, "i", y, "ne mogu da se zapisu pomoću istih cifara.")
+**Улаз**:  
+Матрица:  
 
+1 2 3  
 
-Objašnjenje:
+4 5 6  
 
-1. Funkcija `zapis(x, y)` pretvara oba broja \( x \) i \( y \) u stringove kako bi im se mogla pristupiti svaka cifra.
+Број k: 2  
 
-2. Koristi se funkcija `sorted()` za sortiranje cifara oba broja.
+**Излаз**:  
+Матрица након померања:  
 
-3. Ako su sortirane cifre oba broja iste, funkcija vraća \( 1 \), što znači da brojevi koriste iste cifre. U suprotnom, vraća \( 0 \).
+2 3 1  
 
-4. Program zatim učitava dva broja i ispisuje odgovarajući rezultat na osnovu funkcije `zapis(x, y)`.   
+5 6 4  
 
+**Пример 2**:
 
-.. questionnote ::
+**Улаз**:  
+Матрица:  
 
-   Napisati funkciju par_nepar(n) koja ispituje da li su cifre datog celog broja
-   naizmenično parne i neparne. Napisati program koji učitava ceo broj i ispisuje da li on ispunjava pomenuti uslov
-   ili ne.
-   
+7 8 9  
 
-Funkcija `par_nepar(n)`
+10 11 12  
 
-.. activecode:: vezbanje8_110
-   :coach:
+Број k: 1  
 
-   def par_nepar(n):
-       cifre = str(abs(n))  # Pretvaramo broj u string (koristimo abs da se rešimo negativnog signala)
-    
-       # Proveravamo svaku cifru u nizu
-       for i in range(1, len(cifre)):
-           # Ako je parni indeks (sudeći od 0), proveravamo da li su cifre naizmenično parne i neparne
-           if (int(cifre[i-1]) % 2 == int(cifre[i]) % 2): 
-               return 0  # Ako dve uzastopne cifre nisu naizmenično parne i neparne, vraćamo 0
-       return 1  # Ako su sve cifre naizmenično parne i neparne, vraćamo 1
+**Излаз**:  
+Матрица након померања:  
 
-   # Program koji učitava broj i proverava uslov
-   n = int(input("Unesite ceo broj: "))
-   rezultat = par_nepar(n)
+9 7 8  
 
-   if rezultat == 1:
-       print("Cifre broja", n, "su naizmenično parne i neparne.")  
-   else:
-       print("Cifre broja", n, "nisu naizmenično parne i neparne.")
+12 10 11  
 
+.. reveal:: 12_1_resenje_12_1_2
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
 
-Objašnjenje:
+    .. code-block:: python
 
-1. Funkcija `par_nepar(n)` prvo koristi `str(abs(n))` kako bi broj pretvorila u string i ignorisala negativni znak ako postoji (kako bi se izbegle greške sa negativnim brojevima)
+        def shift_matrix_right(matrix, k):
+            rows, cols = len(matrix), len(matrix[0])
+            k = k % cols  # Уклонити вишак померања
+            for i in range(rows):
+                row = matrix[i]
+                matrix[i] = row[-k:] + row[:-k]
+            return matrix
 
-2. Zatim proverava svaku cifru u stringu. Ako se dve uzastopne cifre (u paru) ponašaju na isti način (obje su parne ili obe su neparne), vraća \( 0 \), što znači da cifre nisu 
-naizmenično parne i neparne
+        # Unos dimenzija matrice
+        m = int(input("Unesite broj redova (m): "))
+        n = int(input("Unesite broj kolona (n): "))
+        
+        # Unos matrice
+        matrix = input_matrix(m, n)
 
-3. Ako su sve cifre naizmenično parne i neparne, funkcija vraća \( 1 \)
-
-4. Program koristi ovu funkciju da proveri uneti broj i ispiše odgovarajući rezultat
-
-   
-   
-   
-.. questionnote ::
-
- 
-   Napisati funkciju romb(n) koja iscrtava romb čija je stranica dužine n. Napisati program koji učitava pozitivan broj i iscrtava odgovarajuću sliku. U slučaju
-   neispravnog unosa, ispisati odgovarajuću poruku o grešci.   
- 
-
-.. activecode:: vezbanje8_111
-   :coach:
-
-   def romb(n):
-       if n <= 0:
-           print("Greška: Broj mora biti pozitivan.")
-           return
-    
-       # Gornji deo romba
-       for i in range(n):
-           # Ispis praznog prostora i zvezda
-           print(" " * (n - i - 1) + "*" * (2 * i + 1))
-    
-       # Donji deo romba
-       for i in range(n - 2, -1, -1):
-           # Ispis praznog prostora i zvezda
-           print(" " * (n - i - 1) + "*" * (2 * i + 1))
-
-   # Program koji učitava broj i iscrtava romb
-   try:
-       n = int(input("Unesite pozitivni broj za stranicu romba: "))
-       romb(n)
-   except ValueError:
-       print("Greška: Unesite celobrojnu vrednost.")
+        k = 2
+        result = shift_matrix_right(matrix, k)
+        for row in result:
+            print(*row)  # Испис резултата
 
 
-Objašnjenje:
+Задатак 3
+-----------
 
-1. Funkcija `romb(n)` prvo proverava da li je \( n \) pozitivan broj. Ako nije, ispisuje poruku o grešci
+Дате су две бинарне матрице `mat` и `target` димензија `n × n`. 
+Проверите да ли је могуће добити `target` од `mat` ротацијом `mat` у инкрементима од 90 степени.
 
-2. Prvi deo funkcije iscrtava gornji deo romba. To se radi tako što za svaki red broj zvezda raste od 1 ka \( 2n-1 \), a broj praznog prostora na početku svakog reda opada
+.. activecode:: v12_zadatak3
+    :coach:
 
-3. Drugi deo funkcije iscrtava donji deo romba, sličan gornjem, ali obrnuto (redukovano za jedan red)
+    # Допуни
 
-4. Program prvo učitava broj sa tastature i poziva funkciju `romb(n)`. Ako korisnik unese nešto što nije ceo broj, koristi se `try-except` 
-blok da se uhvati greška i korisniku ispiše odgovarajuća poruka
+**Пример 1**:
 
-Primer:
+**Улаз**:  
+Матрица `mat`:  
 
-Ako unesete n = 5, dobićete sledeći ispis:
+1 0  
+
+0 1  
+
+Матрица `target`:  
+
+0 1  
+
+1 0  
+
+**Излаз**:  
+True  
+
+**Пример 2**:
+
+**Улаз**:  
+Матрица `mat`:  
+
+1 1  
+
+0 0  
+
+Матрица `target`:  
+
+1 0  
+
+1 0  
+
+**Излаз**:  
+False  
+
+.. reveal:: 12_1_resenje_12_1_3
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
+
+    .. code-block:: python
+
+        def rotate_matrix(mat):
+            n = len(mat)
+            rotated = [[0] * n for _ in range(n)]
+            for i in range(n):
+                for j in range(n):
+                    rotated[j][n - i - 1] = mat[i][j]
+            return rotated
+
+        def can_match_target(mat, target):
+            for _ in range(4):  # До 4 ротације
+                if mat == target:
+                    return True
+                mat = rotate_matrix(mat)
+            return False
+
+        # Unos dimenzija matrice
+        n = int(input("Unesite broj kolona (n): "))
+        
+        # Unos matrice
+        mat = input_matrix(n, n)
+        target = input_matrix(n, n)
+
+        print(can_match_target(mat, target))  # Испис резултата
 
 
-.. image:: ../../_images/zvezdice.png
-   :width: 10%
-   :align: center
+Задатак 4
+-----------
 
- 
-   
+Дат је улазни низ `s`. Потребно је обрнути редослед речи у низу.
+
+.. activecode:: v7_zadatak4
+    :coach:
+
+    # Допуни
+
+**Пример 1**:
+
+**Улаз**:  
+"Python је забаван"
+
+**Излаз**:  
+"забаван је Python"
+
+**Пример 2**:
+
+**Улаз**:  
+"Пример    са  размацима"
+
+**Излаз**:  
+"размацима са Пример"
+
+.. reveal:: 12_1_resenje_12_1_4
+    :showtitle: Прикажи решење
+    :hidetitle: Сакриј решење
+
+    .. code-block:: python
+
+        # Унос низа
+        s = input("Унесите низ: ")
+
+        # Обртање редоследа речи
+        words = s.split()
+        reversed_words = " ".join(words[::-1])
+
+        # Испис резултата
+        print(reversed_words)

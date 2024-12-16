@@ -1,9 +1,9 @@
-Vežbe
+Вежбе
 ======
 
-Evo nekoliko primera koda sa greškama koje možete koristiti za vežbu debagovanja. Svaки пример sadrži grešku, a zatim možete pratiti korake da pronađete i ispravite grešku.
+Ево неколико примера кода са грешкама које можете користити за вежбу дебаговања. Сваки пример садржи грешку, а затим можете пратити кораке да пронађете и исправите грешку.
 
-Syntaksna greška
+Синтаксна грешка
 ----------------
 
 .. activecode:: argumenti2100
@@ -15,14 +15,14 @@ Syntaksna greška
        print("X je veći od 3"
 
 
-**Koraci za debagovanje:**
+**Кораци за дебаговање:**
 
-1. Pokreni kod i proveri da li se pojavljuje greška.
-2. Pogledaj sintaksu, zadrži pažnju na `if` uslovu.
-3. Pronađi da zagrada nije zatvorena u liniji sa `print()`.
-4. Dodaj zatvorenu zagradu:  `if x > 3: print("X je veći od 3")`.
+1. Покрени кôд и провери да ли се појављује грешка.
+2. Погледај синтаксу, задржи пажњу на `if` услову.
+3. Пронађи да заграда није затворена у линији са `print()`.
+4. Додај затворену заграду:  `if x > 3: print("X je veći od 3")`.
 
-Indeksna greška
+Индексна грешка
 ----------------
 
 .. activecode:: argumenti2101
@@ -33,14 +33,14 @@ Indeksna greška
    print(my_list[5])
 
 
-**Koraci za debagovanje:**
+**Кораци за дебаговање:**
 
-1. Pokreni kod i proveri poruku o grešci.
-2. Pogledaj koja linija daje grešku: `my_list[5]`.
-3. Razmisli da li lista ima toliko elemenata (u ovom slučaju, samo 3).
-4. Ispravi indeks tako da bude manji od 3, npr.  `print(my_list[2])`.
+1. Покрени кôд и провери поруку о грешци.
+2. Погледај која линија даје грешку: `my_list[5]`.
+3. Размисли да ли листа има толико елемената (у овом случају, само 3).
+4. Исправи индекс тако да буде мањи од 3, нпр.  `print(my_list[2])`.
 
-Deljenje nulom
+Дељење нулом
 --------------
 
 .. activecode:: argumenti2102
@@ -52,12 +52,12 @@ Deljenje nulom
    print(a / b)
 
 
-**Koraci za debagovanje:**
+**Кораци за дебаговање:**
 
-1. Pokreni kod i proveri poruku o grešci: `ZeroDivisionError`.
-2. Pogledaj liniju sa deljenjem (`a / b`).
-3. Razmisli o tome da li je  `b` 0.
-4. Dodaj proveru pre deljenja:
+1. Покрени кôд и провери поруку о грешци: `ZeroDivisionError`.
+2. Погледај линију са дељењем (`a / b`).
+3. Размисли о томе да ли је  `b` = 0.
+4. Додај проверу пре дељења:
 
 .. activecode:: argumenti2103
    :coach:
@@ -70,7 +70,7 @@ Deljenje nulom
        print("Ne može se deliti sa nulom")
 
 
-Neispravno definisana promenljiva
+Неисправно дефинисана променљива
 ---------------------------------
 
 .. activecode:: argumenti2104
@@ -81,11 +81,11 @@ Neispravno definisana promenljiva
    result = 5 + 3
 
 
-**Koraci za debagovanje:**
+**Кораци за дебаговање:**
 
-1. Pokreni kod i proveri poruku o grešci: `NameError: name 'result' is not defined`.
-2. Pogledaj gde koristiš promenljivu `result` pre nego što je dodeliš vrednost.
-3. Premesti liniju `print(result)` nakon dodele vrednosti: 
+1. Покрени кôд и провери поруку о грешци: `NameError: name 'result' is not defined`.
+2. Погледај где користиш променљиву `result` пре него што је доделиш вредност.
+3. Премести линију `print(result)` након доделе вредности: 
 
 .. activecode:: argumenti2105
    :coach:
@@ -94,7 +94,7 @@ Neispravno definisana promenljiva
    print(result)
 
 
-Pogrešno poređenje
+Погрешно поређење
 ------------------
 
 .. activecode:: argumenti2106
@@ -107,13 +107,13 @@ Pogrešno poređenje
        print("x je jednak y")
 
 
-**Koraci za debagovanje:**
+**Кораци за дебаговање:**
 
-1. Pokreni kod i proveri poruku o grešci: `SyntaxError: invalid syntax`.
-2. Pogledaj znak za poređenje. Trebalo bi da bude `==`, a ne `=`.
-3. Ispravi grešku tako da bude:  `if x == y:`.
+1. Покрени кôд и провери поруку о грешци: `SyntaxError: invalid syntax`.
+2. Погледај знак за поређење. Требало би да буде `==`, а не `=`.
+3. Исправи грешку тако да буде:  `if x == y:`.
 
-Beskonačna petlja
+Бесконачна петља
 -----------------
 
 .. activecode:: argumenti2107
@@ -125,11 +125,11 @@ Beskonačna petlja
        print(i)
 
 
-**Koraci za debagovanje:**
+**Кораци за дебаговање:**
 
-1. Pokreni kod i proveri da li se petlja beskonačno izvršava.
-2. Pogledaj vrednost promenljive `i`. Nedostaje inkrementacija.
-3. Dodaj inkrementaciju na kraju petlje:
+1. Покрени кôд и провери да ли се петља бесконачно извршава.
+2. Погледај вредност променљиве `i`. Недостаје инкрементација.
+3. Додај инкрементацију на крају петље:
 
 .. activecode:: argumenti2108
    :coach:
@@ -140,7 +140,7 @@ Beskonačna petlja
        i += 1
 
 
-Greška u funkciji sa vraćanjem vrednosti
+Грешка у функцији са враћањем вредности
 ----------------------------------------
 
 .. activecode:: argumenti2109
@@ -154,11 +154,11 @@ Greška u funkciji sa vraćanjem vrednosti
    print(result)
 
 
-**Koraci za debagovanje:**
+**Кораци за дебаговање:**
 
-1. Pokreni kod i proveri da li `result` bude `None`.
-2. Pogledaj funkciju `zbir` i primeti da ona ne koristi `return` za vraćanje vrednosti.
-3. Dodaj `return` u funkciju:
+1. Покрени кôд и провери да ли `result` буде `None`.
+2. Погледај функцију `zbir` и примети да она не користи `return` за враћање вредности.
+3. Додај `return` у функцију:
 
 .. activecode:: argumenti2110
    :coach:

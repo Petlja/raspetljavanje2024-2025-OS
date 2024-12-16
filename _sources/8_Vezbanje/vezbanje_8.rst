@@ -3,17 +3,16 @@
 
 .. questionnote ::
 
-   Napisati funkciju min(x, y, z) koja izračunava minimum tri broja. Funkciju napisati
-   na dva načina, jednom korišćenjem listi, drugi put bez korišćenja listi.
-   Napisati program koji učitava tri cela broja i ispisuje njihov minimum.
+   Написати функцију min(x, y, z) која израчунава минимум три броја. Функцију написати
+   на два начина, једном коришћењем листи, други пут без коришћења листи.
+   Написати програм који учитава три цела броја и исписује њихов минимум.
 
+Ево како се може написати функција `min` на два начина:  
 
-Evo kako se može napisati funkcija `min` na dva načina:  
+1. **Коришћењем листе**  
+2. **Без коришћења листе** 
 
-1. **Korišćenjem liste**  
-2. **Bez korišćenja liste** 
-
-Rešenje sa listom:
+Решење са листом:
 
 .. activecode:: vezbanje8_100
    :coach:
@@ -27,7 +26,6 @@ Rešenje sa listom:
    z = int(input("Unesite treći broj: "))
 
    print("Minimum tri broja je (koristeći listu):", min_with_list(x, y, z))
-
 
 Rešenje bez liste:
 
@@ -49,24 +47,22 @@ Rešenje bez liste:
 
    print("Minimum tri broja je (bez liste):", min_without_list(x, y, z))
 
+Објашњење:
 
-Objašnjenje:
+- У првом решењу, користимо Пајтонову функцију `min` на листи која садржи бројеве 
 
-- U prvom rešenju, koristimo Pythonovu funkciju `min` na listi koja sadrži brojeve 
+- У другом решењу, ручно проналазимо најмању вредност помоћу if-услова 
 
-- U drugom rešenju, ručno pronalazimo najmanju vrednost pomoću if-uslova 
-
-Oba programa omogućavaju unos tri broja i ispisuju najmanji broj korišćenjem odgovarajuće funkcije.
+Оба програма омогућавају унос три броја и исписују најмањи број коришћењем одговарајуће функције.
 
 -------------------------------------------------------------------
 
-
 .. questionnote ::
 
-   Napisatu funkciju koja računa kvadrat unetog broja
+   Написати функцију која рачуна квадрат унетог броја
    
    
-Jednostavna funkcija koja računa kvadrat unetog broja:
+Једноставна функција која рачуна квадрат унетог броја:
 
 .. activecode:: vezbanje8_102
    :coach:
@@ -79,22 +75,21 @@ Jednostavna funkcija koja računa kvadrat unetog broja:
    print("Kvadrat broja", broj, "je:", kvadrat(broj))
 
 
-
-Objašnjenje:
-1. Funkcija `kvadrat` prima jedan argument `broj`.
-2. Koristi operator `**` za izračunavanje kvadrata broja.
-3. Korisnik unosi broj koji se zatim prosleđuje funkciji, a rezultat se ispisuje.
+Објашњење:
+1. Функција `kvadrat` прима један аргумент `broj`.
+2. Користи оператор `**` за израчунавање квадрата броја.
+3. Корисник уноси број који се затим прослеђује функцији, а резултат се исписује.
  
 
-Možete koristiti ovu funkciju za izračunavanje kvadrata bilo kog broja, uključujući cele brojeve i decimalne vrednosti.   
+Можете користити ову функцију за израчунавање квадрата било ког броја, укључујући целе бројеве и децималне вредности.   
    
  
 .. questionnote :: 
    
-   Napisati funkciju koja računa apsolutnu vrednost unetog broja
+   Написати функцију која рачуна апсолутну вредност унетог броја
    
    
-Funkcija za računanje apsolutne vrednosti
+Функција за рачунање апсолутне вредности
 
 .. activecode:: vezbanje8_103
    :coach:
@@ -108,20 +103,19 @@ Funkcija za računanje apsolutne vrednosti
    broj = float(input("Unesite broj: "))
    print("Apsolutna vrednost broja", broj, "je:", apsolutna_vrednost(broj))
 
-
-Objašnjenje:
-1. Funkcija `apsolutna_vrednost` prima jedan argument `broj`.
-2. Ako je broj negativan (`broj < 0`), vraća suprotnu vrednost broja (`-broj`).
-3. Ako je broj pozitivan ili nula, vraća se broj bez izmene.
-4. Program omogućava unos broja od strane korisnika i ispisuje njegovu apsolutnu vrednost.   
+Објашњење:
+1. Функција `apsolutna_vrednost` прима један аргумент `broj`.
+2. Ако је број негативан (`broj < 0`), враћа супротну вредност броја (`-broj`).
+3. Ако је број позитиван или нула, враћа се број без измене.
+4. Програм омогућава унос броја од стране корисника и исписује његову апсолутну вредност.   
    
 
 .. questionnote ::
 
-   Napisati funkciju koja računa kub unetog broja
+   Написати функцију која рачуна куб унетог броја
    
 
-Funkcija za računanje kuba
+Функција за рачунање куба
 
 .. activecode:: vezbanje8_104
    :coach:
@@ -133,22 +127,21 @@ Funkcija za računanje kuba
    broj = float(input("Unesite broj: "))
    print("Kub broja", broj, "je:", kub(broj))
 
+Објашњење:
 
-Objašnjenje:
+1. Функција `kub` прима један аргумент `broj`
 
-1. Funkcija `kub` prima jedan argument `broj`
+2. Користи оператор `**` за израчунавање трећег степена (куба) броја
 
-2. Koristi operator `**` za izračunavanje trećeg stepena (kuba) broja
-
-3. Korisnik unosi broj, koji se prosleđuje funkciji, a rezultat se ispisuje   
+3. Корисник уноси број, који се прослеђује функцији, а резултат се исписује   
    
 
 .. questionnote ::
 
-   Napisati funkciju koja računa x^n gde su x i n argumenti funkcije
+   Написати функцију која рачуна x^n где су x и n аргументи функције
    
 
-Funkcija za računanje  x^n
+Функција за рачунање  x^ n
 
 .. activecode:: vezbanje8_105
    :coach:
@@ -161,17 +154,15 @@ Funkcija za računanje  x^n
    n = int(input("Unesite eksponent n: "))
    print("Rezultat", x, "podignut na", n, "je:", stepen(x, n))
 
+Објашњење:
 
-Objašnjenje:
+1. Функција `stepen` прима два аргумента: `x` (основа) и `n` (експонент)
 
-1. Funkcija `stepen` prima dva argumenta: `x` (osnova) i `n` (eksponent)
+2. Користи оператор `**` за израчунавање x^n
 
-2. Koristi operator `**` za izračunavanje x^n
+3. Корисник уноси основу и експонент, који се затим прослеђују функцији, а резултат се исписује   
 
-3. Korisnik unosi osnovu i eksponent, koji se zatim prosleđuju funkciji, a rezultat se ispisuje   
-
-
-Funkcija za računanje x^n sa petljom
+Функција за рачунање x^n са петљом
 
 .. activecode:: vezbanje8_106
    :coach:
@@ -189,25 +180,22 @@ Funkcija za računanje x^n sa petljom
    n = int(input("Unesite eksponent n: "))
    print("Rezultat", x, "podignut na", n, "je:", stepen_petlja(x, n))
 
+Објашњење:
 
-Objašnjenje:
+1. Функција `stepen_petlja` користи петљу за множење основе `x` са самом собом `n` пута
 
-1. Funkcija `stepen_petlja` koristi petlju za množenje osnove `x` sa samom sobom `n` puta
+2. Ако је експонент негативан (`n < 0`), функција изврши инверзију резултата x^(-n) = 1/x^n
 
-2. Ako je eksponent negativan (`n < 0`), funkcija izvrši inverziju rezultata x^(-n) = 1/x^n
+3. Петља користи `abs(n)` да би избегла грешку са негативним бројевима, а затим резултат коригује ако је експонент негативан
 
-3. Petlja koristi `abs(n)` da bi izbegla grešku sa negativnim brojevima, a zatim rezultat koriguje ako je eksponent negativan
-
-
-Ovaj način računanja x^n koristi petlju umesto operatora '**', što može biti korisno za veće vrednosti eksponenta
-
+Овај начин рачунања x^n користи петљу уместо оператора '**', што може бити корисно за веће вредности експонента
 
 .. questionnote ::
 
-   Napisati funkciju koja računa fibonačijev niz
+   Написати функцију која рачуна Фибоначијев низ
    
 
-Fibonacci niz (iterativni pristup)
+Фибоначијев низ (итеративни приступ)
 
 .. activecode:: vezbanje8_107
    :coach:
@@ -225,41 +213,37 @@ Fibonacci niz (iterativni pristup)
    print("Rezultat: ", n, "-ti broj Fibonacci niza je:", fibonaci(n))
 
 
+Објашњење:
 
-Objašnjenje:
+1. Ако је n <= 1, функција одмах враћа n (јер су први и други број у Фибоначијевом низу 0 и 1)
 
-1. Ako je n <= 1, funkcija odmah vraća n (jer su prvi i drugi broj u Fibonacci nizu 0 i 1)
+2. За вредности н > 1, користи се петља која рачуна n-ти Фибоначијев број. Почетне вредности су `а = 0` и `b = 1`
 
-2. Za vrednosti n > 1, koristi se petlja koja računa n-ti Fibonacci broj. Početne vrednosti su `a = 0` i `b = 1`
+3. У свакој итерацији, `а` постаје претходни број низа, а `b` постаје тренутни број низа, док се број који треба да се израчуна помера за једно место у низу
 
-3. U svakoj iteraciji, `a` postaje prethodni broj niza, a `b` postaje trenutni broj niza, dok se broj koji treba da se izračuna pomera za jedno mesto u nizu
+4. На крају, функција враћа последњи број који је израчунат у петљи
 
-4. Na kraju, funkcija vraća poslednji broj koji je izračunat u petlji
+Објашњење:
 
-
-Objašnjenje:
-
-Ovaj pristup koristi promenljive `a` i `b` za čuvanje prethodna dva broja niza i iterira kroz petlju da izračuna n-ti broj Fibonacci niza
+Овај приступ користи променљиве `а` и `b` за чување претходна два броја низа и итерира кроз петљу да израчуна n-ти број Фибоначијевог низа
    
    
 .. questionnote ::
 
-   Napisati program koji testira ove funkcije
+   Написати програм који тестира ове функције
    
    
-Evo programa koji testira sve funkcije koje smo prethodno napisali: 
+Ево програма који тестира све функције које смо претходно написали: 
 
-1. Funkcija koja računa kvadrat broja.
-2. Funkcija koja računa apsolutnu vrednost broja.
-3. Funkcija koja računa kub broja.
-4. Funkcija koja računa x^n(stepen).
-5. Funkcija koja računa Fibonacci niz.
-
+1. Функција која рачуна квадрат броја.
+2. Функција која рачуна апсолутну вредност броја.
+3. Функција која рачуна куб броја.
+4. Функција која рачуна x^n(степен).
+5. Функција која рачуна Фибоначијев низ.
 
 
 .. activecode:: vezbanje8_108
    :coach:
-
 
    # Funkcija za kvadrat broja
    def kvadrat(broj):
@@ -312,11 +296,11 @@ Evo programa koji testira sve funkcije koje smo prethodno napisali:
    n = int(input("Unesite broj n za Fibonacci niz: "))
    print(n, "-ti broj Fibonacci niza je:", fibonaci(n))
 
+Објашњење:
 
-Objašnjenje:
+1. Програм тестира сваку од функција: квадрат, апсолутну вредност, куб, степен и Фибоначијев низ
 
-1. Program testira svaku od funkcija: kvadrat, apsolutnu vrednost, kub, stepen i Fibonaci niz
+2. За сваку функцију корисник уноси одговарајући број или вредности, а затим програм исписује резултат
 
-2. Za svaku funkciju korisnik unosi odgovarajući broj ili vrednosti, a zatim program ispisuje rezultat
+3. Све функције су позване у оквиру тестирања, како би се проверило њихово исправно функционисање са корисничким уносом   
 
-3. Sve funkcije su pozvane u okviru testiranja, kako bi se proverilo njihovo ispravno funkcionisanje sa korisničkim unosom   
