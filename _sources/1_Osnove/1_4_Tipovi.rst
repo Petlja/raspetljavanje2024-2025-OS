@@ -32,6 +32,9 @@
 
 Променљиве
 -----------
+.. raw:: html
+
+   <iframe width="780" height="420" src="https://www.youtube.com/embed/l11VRa8uYSk?si=yDzkeShVCJMvh8ii" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Текст и бројеве које желимо да користимо више пута можемо сачувати у променљиве. Променљиве служе да рачунар запамти вредности које смо му задали.
 Сваку променљиву можемо да замислимо као полицу на којој нешто чувамо. У сваком тренутку то нешто можемо склонити са полице и заменити нечим другим. 

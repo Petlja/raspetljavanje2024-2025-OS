@@ -2,6 +2,10 @@
 Гранање
 =======
 
+.. raw:: html
+
+    <iframe width="780" height="420" src="https://www.youtube.com/embed/sD0uzG28eCw?si=XdHTt7XGm-ATAV-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
 Посматрамо следећи проблем:
 
 .. questionnote::

@@ -1,6 +1,11 @@
 Шта је функција
 =================
 
+.. raw:: html
+
+   <iframe width="780" height="420" src="https://www.youtube.com/embed/KJunouxilpo?si=sPE5h4hXG28NegIa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 Функција је блок кода у Пајтону који је дизајниран да извршава одређени задатак. Функције нам омогућавају да групишемо кôд који можемо више пута да користимо без поновног писања истих делова.
 Функције су кључни део модуларног програмирања јер омогућавају лакше одржавање кода, његово организовање и поновну употребу.
 

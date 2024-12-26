@@ -3,6 +3,10 @@
 
 Функција input() у Python-у се користи за унос података од корисника путем тастатуре. Она чита унос као стринг (текстуални податак) и омогућава интеракцију између корисника и програма.
 
+.. raw:: html 
+
+   <iframe width="780" height="420" src="https://www.youtube.com/embed/noi-O8B56sI?si=2scOLiRwqpGQpSt-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Основна употреба input()
 ---------------------------
 

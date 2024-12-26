@@ -1,6 +1,9 @@
 While петља
 ============
 
+.. raw:: html
+
+    <iframe width="780" height="420" src="https://www.youtube.com/embed/ojHAFS5GlL0?si=bvGKGqV5kVwvBIrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 У Пајтону, `while` петља се користи када желимо да понављамо одређени блок кода док неки услов остаје тачан. 
 Ова петља ће наставити да извршава кôд све док је услов `True`. Када услов постане `False`, петља се прекида и 
